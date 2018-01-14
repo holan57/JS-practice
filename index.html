@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>電燈開關 倒數計時</title>
+    <!-- CSS 風格並不包含在教學裡 -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--- 從外部載入 js 檔 -->
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body>
+    <table style="margin:0px auto;padding: 10px;border:2px solid;border-color:#1E90FF">
+        <tbody>
+            <tr>
+                <td rowspan="2">
+                    <!--- 照片 -->
+                    <img id="image" src="img/on.jpg" width="400" height="300">
+                </td>
+                <td>
+                    <!--- 倒數計時器 -->
+                    <div class="div" id="timer">0</div>
+                    <div class="div2">
+                        <form>
+                            <p>請輸入秒數</p>
+                            <input type="text" id="nric" size="1">
+                            <input type="button" value="Start" onclick="countDowntrigger()">
+                        </form>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!--- 開關燈按鈕 -->
+                    <button class="button" onclick="toggleLight();">ON<br>-<br>OFF</button></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
